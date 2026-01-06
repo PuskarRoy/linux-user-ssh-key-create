@@ -27,6 +27,9 @@ Bash script to create Linux users and provision SSH key-based access with privat
     
     sudo rm -rf pvt_keys
 
+    echo "User '$USERNAME' created successfully."
+    echo "Private key saved as: $USERNAME.pem"
+
 # Windows Admin User Create
 PowerShell command to create a user with Administrator privilege.
 
