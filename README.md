@@ -33,7 +33,7 @@ Bash script to create Linux users and provision SSH key-based access with privat
 # Windows Admin User Create
 PowerShell command to create a user with Administrator privilege.
 
-   NET USER <USERNAME> "<PASSWORD>" /ADD
-   NET LOCALGROUP "Administrators" "<USERNAME>" /ADD
-   WMIC USERACCOUNT WHERE "Name='<USERNAME>'" SET PasswordExpires=FALSE
+    NET USER <USERNAME> "<PASSWORD>" /ADD
+    NET LOCALGROUP "Administrators" "<USERNAME>" /ADD
+    WMIC USERACCOUNT WHERE "Name='<USERNAME>'" SET PasswordExpires=FALSE
 
