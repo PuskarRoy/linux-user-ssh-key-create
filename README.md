@@ -1,4 +1,4 @@
-# linux-user-ssh-key-create
+# Linux-Admin-User(ssh-key)
 Bash script to create Linux users and provision SSH key-based access with private key generation.
 
     #!/bin/bash
