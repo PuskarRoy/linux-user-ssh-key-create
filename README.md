@@ -22,6 +22,7 @@ Bash script to create Linux users and provision SSH key-based access with privat
     sudo chmod 600 "/home/$USERNAME/.ssh/authorized_keys"
     sudo chmod 600 "$USERNAME.pem"
     sudo chown -R "$USERNAME:$USERNAME" "/home/$USERNAME/.ssh"
+    restorecon -Rv /home/admin2/.ssh &> /dev/null
 
     echo "$USERNAME ALL=(ALL) NOPASSWD: ALL" | sudo EDITOR='tee -a' visudo
     
