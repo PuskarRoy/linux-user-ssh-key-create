@@ -20,7 +20,7 @@ Bash script to create Linux users and provision SSH key-based access with privat
     sudo mv "pvt_keys/$USERNAME" "$USERNAME.pem"
     sudo chmod 700 "/home/$USERNAME/.ssh"
     sudo chmod 600 "/home/$USERNAME/.ssh/authorized_keys"
-    sudo chmod 777 "$USERNAME.pem"
+    sudo chmod 600 "$USERNAME.pem"
     sudo chown -R "$USERNAME:$USERNAME" "/home/$USERNAME/.ssh"
 
     echo "$USERNAME ALL=(ALL) NOPASSWD: ALL" | sudo EDITOR='tee -a' visudo
